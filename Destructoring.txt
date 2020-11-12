@@ -1,0 +1,51 @@
+Object Destructoring 1
+console.log(numPlanets) = 8
+console.log(yearNeptuneDiscovered) = 1846
+
+Object destructoring 2
+console.log(discoveryYears) = {yearNeptuneDiscovered:1846, yearMarsDiscovered:1659}
+
+Object Destructoring 3
+function getUserData({firstName, favoriteColor = 'green'}){
+   return `Your name is ${firstName} and you like ${favoriteColor}`
+}
+
+getUserdata({firstName: 'Alejandro', FavoriteColor: 'purple'}) = `Your name is Alejandro and you like purple`
+getUserdata({firstName: 'Melisa'} = `Your name is Melisa and you like green`
+getUserdata({}) = `Your name is undefined and you like green`
+
+Array distructoring 1
+
+let [first, second, third] = ['Maya', 'Marisa', 'Chi']
+
+console.log(first) = Maya
+console.log(second) = Marisa
+console.log(third) = Chi
+
+Array Distructoring 2
+
+let [raindrops, wiskers, ...aFewOfMyFavoriteThings] = [
+    'Raindrops and roses',
+    'Whiscers on kittens',
+    'Bright copper kittens',
+    'warm woolen mittens',
+    'Brown paper pakages tied up with strings'
+]
+
+console.log(raindrops) = 'Raindrops and roses'
+console.log(wiskers) = 'Whiscers on kittens'
+console.log(aFewOfMyFavoriteThings) = ['Bright copper kittens',
+    				       'warm woolen mittens',
+    				       'Brown paper pakages tied up with strings'
+				      ]
+
+
+
+
+
+
+
+
+
+
+
